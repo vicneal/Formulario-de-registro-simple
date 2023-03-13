@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 3.4% 23.5% 0 23.5% ;
+    background-image:linear-gradient(115deg,rgba(58, 58, 158, 0.8),rgba(55, 55, 99, 0.7)),url(img/codigo-html.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    color: rgb(255, 255, 255);
+}
+.cabecera{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+}
+.cabecera__title{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 3px;
+}
+.cabecera__description{
+    font-size: 1.12rem;
+    font-style: italic;
+}
+.form{
+    background-image: linear-gradient(110deg,rgba(10,15,23,.7),rgba(10,15,23,.8));
+    border: none;
+    border-radius: 5px;
+}
+.container__form{
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+.container__form.primero{
+    padding: 5% 5% 0 5% ;
+}
+.container__form-label{
+    padding-bottom: 10px;
+    font-size: 1.2em;
+}
+.container__form-input.ultimo{
+    padding-bottom: 0 ;
+}
+.container__form-input{
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+input[type="number"]{
+    width: 20%;
+}
+
+
+
+.container__form.segundo{
+    padding: 0 5% 0 5% ;
+}
+.container__form-select{
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    width: 30%;
+    color: rgb(79, 74, 74);
+    font-family: 'Poppins', sans-serif;;
+}
+.select__option{
+    margin: 5px 0;
+    height: 60px;
+    color: rgb(44, 41, 41);
+}
+.form__radio{
+    font-size: 1.17em;
+}
+
+.form__checkbox{
+    font-size: 1.17em;
+}
+.label__textarea{
+    font-size: 1.17rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+textarea{
+    font-size: 1.17rem;
+    border-radius: 5px;
+}
+textarea:focus , .container__form-input:focus, .container__form-select:focus{
+    outline: none;
+    box-shadow: 0 0 5px rgb(14, 232, 232);
+    border-color: rgb(31, 179, 179);
+}
+
+input[type="submit"]{
+    width: 90%;
+    margin:20px 5% 40px 5%;
+    padding: 15px 0;
+    color: white;
+    background: rgb(51, 157, 58);
+    font-size: .95rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:578px) {
+    body{
+        padding: 2% 5% 0 5% ;
+    }
+    input[type="number"]{
+        width: 50%;
+    }
+    .container__form-select{
+        width: 60%;
+    }
+}

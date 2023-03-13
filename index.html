@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;1,200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="container">
+        <div class="cabecera">
+            <h1 class="cabecera__title" id="title">freeCodeCamp Survey Form</h1>
+            <p class="cabecera__description" id="description">Thank you for taking the time to help us improve the platform</p>
+        </div>
+        <form id="survey-form" class="form">
+            <fieldset class="container__form primero">
+                <label id="name-label"  class="container__form-label">Nombre</label>
+                <input class="container__form-input" type="text" id="name" name="name-label" required placeholder="Nombre">
+                <label class="container__form-label" id="email-label">Email</label>
+                <input  class="container__form-input"type="email" id="email" name="email-label" required placeholder="Email">
+                <label class="container__form-label" id="number-label">Edad</label>
+                <input class="container__form-input" type="number" id="number" name="number-label" required min="10" max="120" placeholder="edad">
+            </fieldset>
+            <fieldset class="container__form segundo">
+                <label for="" class="container__form-label">Ciudad</label>
+                <select name="" id="dropdown" class="container__form-select">
+                    <option disabled selected value="Elija una opción">Elija una opción</option>
+                    <option value="Puerto Maldonado" class="select__option">Puerto Maldonado</option>
+                    <option value="Las piedras" class="select__option">Las piedras</option>
+                    <option value="Inambari" class="select__option">Inambari</option>
+                    <option value="Iberia" class="select__option">Iberia</option>
+                    <option value="Iñapari" class="select__option">Iñapari</option>
+                </select>
+                <label id="" class="form__radio">Radio 01 <input type="radio" name="radio1" id="" value="radio1"></label>
+                <label id="" class="form__radio">Radio 02 <input type="radio" name="radio1" id="" value="radio2"></label>
+                <label id="" class="form__checkbox"><input type="checkbox" name="check1" id="" value="check1"> Checkbox 01 </label>
+                <label id="" class="form__checkbox"><input type="checkbox" name="check2" id="" value="check2"> Checkbox 02 </label>
+                <label for=""class="label__textarea">Ingrese un comentario.</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Ingrese su comentario"></textarea>
+            </fieldset>
+            <input type="submit" value="ACEPTAR" id="submit">
+        </form>
+
+    </div>
+    
+</body>
+</html>
